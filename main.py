@@ -1,5 +1,6 @@
-# Welcome the player to the quiz
+# Welcome the player to the quiz and ask for their name
 print("Welcome to the Rangiora High School Quiz!\n")
+player_name = input("What is your name? ")
 
 # Create a list of questions and answers
 questions = [
@@ -33,5 +34,8 @@ for i in range(len(questions)):
     else:
         print("Incorrect.\n")
 
-# Print the player's score
-print("Quiz complete! Your score is {}/{}.".format(score, len(questions)))
+# Print the player's score and thanks for playing message
+print("Well done, {}! You scored {}/{}.".format(player_name, score, len(questions)))
+print("Thanks for playing the Rangiora High School Quiz!\n")
+
+#
